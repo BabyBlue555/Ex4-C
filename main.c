@@ -9,13 +9,11 @@ int main() {
 
     while(!(operation_char != 'A' && operation_char != 'B' && operation_char != 'D' && operation_char != 'S' && operation_char != 'T')) {
         getchar();
-        printf("hello");
 
         if(operation_char == 'A') {
             deleteGraph_cmd(&head);
             head = NULL; 
-            build_graph_cmd(&head);
-           // printGraph_cmd(&head); 
+            build_graph_cmd(&head); 
         }
 
         else if(operation_char == 'B') {

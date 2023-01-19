@@ -187,9 +187,6 @@ void printGraph_cmd(pnode head) {
         currentEdge = currentNode->edges;
         
         while(currentEdge != NULL) {
-            printf("weight = %p",currentEdge);
-            printf("%p",currentEdge->next); /////////// SEGMENTATION
-            printf("weight = %d",currentEdge->endpoint->node_num);
             printf("dst = %d, weight = %d | ", currentEdge->endpoint->node_num, currentEdge->weight);
             currentEdge = currentEdge->next;
         }
